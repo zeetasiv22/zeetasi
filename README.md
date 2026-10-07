@@ -6,7 +6,7 @@ This repository previously contained unrelated files (`InVisbleSecurity`, `Key`,
 
 ## Deploy ke Render
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/SANZTZY21/Security/tree/coderabbit/build-zetahub-streaming-platform/decff00e)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/zeetasiv22/zeetasi/tree/coderabbit/push-changes-to-github/1945a175)
 
 Siapkan Supabase cloud terlebih dahulu, terapkan migrasi dan `supabase/bootstrap.sql`, lalu isi environment variable di Render. Ikuti [panduan Render langkah demi langkah](docs/RENDER.md). Jangan gunakan kredensial Supabase lokal dari Preview untuk deploy cloud.
 
@@ -78,3 +78,7 @@ Provider secrets are server-only. Cosmetic titles, XP, and premium never assign 
 - [Troubleshooting](docs/TROUBLESHOOTING.md)
 - [Native app preparation](docs/NATIVE.md)
 - [Delivered and outstanding capabilities](docs/DELIVERY.md)
+
+## RapidAPI and Vercel
+
+See [provider research, activation requirements and playback verification](docs/RAPIDAPI.md) and [Vercel deployment / installable PWA](docs/VERCEL.md). The provider engine and adaptive player are implemented; **a real RapidAPI direct-playback provider remains unverified and inactive** pending credentials, response samples and successful end-to-end playback. Streaming Availability supplies official watch links only.

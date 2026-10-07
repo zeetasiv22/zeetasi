@@ -1,3 +1,5 @@
+import { ProviderSearch } from "@/components/provider-search";
+import { ProviderTitlePage, ProviderWatchPage } from "@/components/provider-pages";
 import {
   OfficialStreamCards,
   OfficialStreamPage,
@@ -71,6 +73,9 @@ export default async function Page({
       />
     );
   else if (privatePages.has(root)) content = <AccountPage path={path} />;
+  else if (root === "search") content = <ProviderSearch initialQuery={search.q?.slice(0,100)} />;
+  else if (root === "title" && path[1]?.startsWith("rp_")) content = <ProviderTitlePage id={path[1]} />;
+  else if (root === "watch" && path[1]?.startsWith("rp_")) content = <ProviderWatchPage id={path[1]} />;
   else if (root === "title" && path[1])
     content = (
       <TitlePage

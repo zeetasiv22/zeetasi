@@ -13,11 +13,14 @@
     "db:start": "supabase start -x studio,imgproxy,edge-runtime,logflare,vector,supavisor",
     "db:reset": "supabase db reset",
     "format": "prettier --write src tests scripts docs README.md",
-    "test:http": "node scripts/http-smoke.mjs"
+    "test:http": "node scripts/http-smoke.mjs",
+    "test:providers:integration": "node scripts/providers.integration.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "2.117.2",
+    "dashjs": "^5.2.1",
+    "hls.js": "^1.7.3",
     "lucide-react": "latest",
     "next": "16.3.8",
     "react": "^19.2.0",
@@ -37,6 +40,10 @@
     "supabase": "latest",
     "tailwindcss": "4.3.3",
     "typescript": "^5.9.0",
+    "vite": "^8.3.3",
     "vitest": "latest"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }

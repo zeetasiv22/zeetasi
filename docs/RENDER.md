@@ -25,9 +25,9 @@ Jika ingin menyediakan video uji Zeta Orbit di deploy demo, tambahkan hanya tiga
 
 ## 2. Buat Blueprint di Render
 
-Buka [Deploy ZetaHub ke Render](https://render.com/deploy?repo=https://github.com/SANZTZY21/Security/tree/coderabbit/build-zetahub-streaming-platform/decff00e).
+Buka [Deploy ZetaHub ke Render](https://render.com/deploy?repo=https://github.com/zeetasiv22/zeetasi/tree/coderabbit/push-changes-to-github/1945a175).
 
-Login ke Render, izinkan akses GitHub jika diminta, dan tinjau layanan `zetahub`. Branch yang dipakai adalah `coderabbit/build-zetahub-streaming-platform/decff00e`.
+Login ke Render, izinkan akses GitHub jika diminta, dan tinjau layanan `zetahub`. Branch yang dipakai adalah `coderabbit/push-changes-to-github/1945a175`.
 
 Isi empat environment variable wajib:
 

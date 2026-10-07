@@ -107,6 +107,7 @@ export function VideoPlayer({
       pending.current = false;
     }
   }
+  if (!source?.url) return <div className="notice" role="status">Playback unavailable from configured providers.</div>;
   return (
     <div className={theater ? "video-shell theater" : "video-shell"}>
       <video

@@ -1,3 +1,5 @@
+import { ProviderAdmin } from "./provider-admin";
+import { providerHealth } from "@/server/providers/engine";
 import { SettingsEditor, PlanEditor } from "./admin-config";
 import Link from "next/link";
 import { db } from "@/lib/supabase/server";
@@ -32,6 +34,7 @@ export async function AdminPage({
         href="/"
       />
     );
+  if (section === "providers" && allowed.has("operations")) return <ProviderAdmin initial={await providerHealth()} />;
   const def = section ? adminSections[section] : null;
   if (section && (!def || !allowed.has(def.permission)))
     return (
@@ -65,6 +68,7 @@ export async function AdminPage({
       />
       <nav className="admin-nav">
         <Link href={`/${root}`}>Ringkasan</Link>
+        {allowed.has("operations") && <Link href={`/${root}/providers`}>Providers</Link>}
         {keys.map((key) => (
           <Link
             key={key}

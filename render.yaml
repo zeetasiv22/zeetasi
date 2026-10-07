@@ -4,7 +4,7 @@ services:
   - type: web
     name: zetahub
     runtime: node
-    branch: coderabbit/build-zetahub-streaming-platform/decff00e
+    branch: coderabbit/push-changes-to-github/1945a175
     plan: free
     buildCommand: npm ci --include=dev && npm run build
     startCommand: npm start
@@ -31,3 +31,11 @@ services:
         value: "false"
       - key: CRON_SECRET
         generateValue: true
+      - key: RAPIDAPI_KEY
+        sync: false
+      - key: RAPIDAPI_VERIFIED_PROVIDERS
+        value: ""
+      - key: RAPIDAPI_COUNTRY
+        value: id
+      - key: RAPIDAPI_MONTHLY_BUDGET
+        value: "1000"
