@@ -1,0 +1,8 @@
+Zeta Orbit — original generated playback fixture
+
+The original geometric video and text animation in zeta-orbit.webm was created for this ZetaHub implementation. To the extent legally possible, the author dedicates this original fixture to the public domain under CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/
+
+This dedication covers the original fixture only, not third-party catalog posters, metadata, provider logos, or any unrelated material. It is a playback test film, not a licensed episode of a third-party anime or drama.
+
+Reproduce with scripts/generate-video.sh and FFmpeg with VP9 support.

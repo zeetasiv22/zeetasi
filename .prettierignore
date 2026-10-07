@@ -1,0 +1,8 @@
+node_modules
+.next
+package-lock.json
+supabase/.temp
+InVisbleSecurity
+Key
+Security
+config.json

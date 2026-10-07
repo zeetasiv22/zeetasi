@@ -1,0 +1,12 @@
+-- Public configuration and explicitly labeled first-party development playback fixture.
+insert into subscription_plans values ('monthly','Bulanan',29000,30,true),('quarterly','3 Bulan',79000,90,true),('annual','Tahunan',249000,365,true);
+insert into avatar_items values ('orbit','Orbit','frame','#39F56B',0,false),('ice','Arctic','frame','#67D9FF',100,false),('premium','Neon Premium','frame','#AAFF57',0,true),('legend','Legenda','frame','#EBC96E',1000,false);
+insert into title_definitions values ('newcomer','Newcomer','#8A9690',0),('explorer','Explorer','#39F56B',100),('legend','Zeta Legend','#EBC96E',1000);
+insert into achievements values ('first-light','First Light','Selesaikan episode pertama.',1),('explorer','Penjelajah','Selesaikan 10 episode berbeda.',10);
+insert into badge_definitions values ('premium','Premium','#39F56B','check'),('moderator','Moderator','#EF5350','shield'),('owner','Owner','#EBC96E','crown');
+insert into application_settings values ('ads','{"frequency":2}'),('gamification','{"completion_xp":25}'),('home','{"sections":[{"id":"trending","title":"Trending Sekarang","visible":true},{"id":"popular","title":"Anime Populer","visible":true},{"id":"genres","title":"Pilih Duniamu","visible":true},{"id":"continue","title":"Lanjutkan Petualanganmu","visible":true},{"id":"donghua","title":"Dunia Donghua","visible":true},{"id":"community","title":"Cerita seru, lebih seru dibahas.","visible":true}]}');
+insert into catalog_titles(id,title,description,year,genres,published,license) values ('zeta-orbit','Zeta Orbit — Film Uji','Animasi abstrak orisinal ZetaHub. Video uji berizin untuk memverifikasi pemutaran; bukan episode anime.',2026,array['Original','Animation'],true,'ZetaHub original, CC0 1.0');
+insert into episodes(id,title_id,number,title,duration,published) values ('00000000-0000-4000-8000-000000000001','zeta-orbit',1,'Orbit: First Light',24,true),('00000000-0000-4000-8000-000000000002','zeta-orbit',2,'Orbit: Emerald Horizon',24,true);
+insert into playback_sources(episode_id,url,license,type) values ('00000000-0000-4000-8000-000000000001','/media/zeta-orbit.webm','ZetaHub original, CC0 1.0','video/webm'),('00000000-0000-4000-8000-000000000002','/media/zeta-orbit.webm','ZetaHub original, CC0 1.0','video/webm');
+-- Original development captions for the original Zeta Orbit fixture only.
+insert into episode_subtitles(episode_id,language,label,url,license) values ('00000000-0000-4000-8000-000000000001','id','Indonesia','/media/zeta-orbit-id.vtt','ZetaHub original, CC0 1.0');
